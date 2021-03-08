@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTitle">#ff9933</color>
+    <color name="line_color">#959455</color>
+
+    <color name="inactiveButton">#aaaaaa</color>
+    <color name="register_SwitchStatementButton">#ffffff</color>
+    <color name="register_SwitchStatementButtonTitle">#0000ff</color>
+    <color name="green">#a0ffa0</color>
+    <color name="ActiveButtonColor">#9ff123</color>
+    <color name="ButtonPressed">#095945</color>
+</resources>

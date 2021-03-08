@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="familymap.branch.Settings.SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/person_first"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name"
+                android:textSize="10pt"/>
+
+            <TextView
+                android:id="@+id/person_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:text="@string/placeholding_text"
+                android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/person_second"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_first">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name:"
+                android:textSize="10pt"/>
+
+            <TextView
+                android:id="@+id/person_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:text="@string/placeholding_text"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/person_third"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_second">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textSize="10pt"/>
+
+            <TextView
+                android:id="@+id/person_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:text="@string/placeholding_text"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/person_fourth"
+        android:orientation="vertical"
+        android:layout_below="@id/person_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/events"
+                android:textSize="10pt"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/person_events_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_fourth"
+        android:scrollbars="vertical"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/>
+
+    <LinearLayout
+        android:id="@+id/person_fifth"
+        android:orientation="vertical"
+        android:layout_below="@id/person_events_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:layout_below="@id/person_events_recycler"-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/search"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/family"
+                android:textSize="10pt"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/person_family_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_fifth"
+        android:scrollbars="vertical"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/> <!-- -->
+</RelativeLayout>

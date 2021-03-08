@@ -1,0 +1,101 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+    <RelativeLayout
+                  android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:gravity="center"
+                  tools:context="familymap.LoginFragment">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/login_title"
+                    android:text="@string/Login"
+                    android:textSize="15pt"
+                    android:textColor="@color/colorTitle"
+                    android:gravity="center" />
+
+                <GridLayout
+                    android:id="@+id/login_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/login_title"
+                    android:layout_marginStart="12dp"
+                    android:columnCount="2">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:text="@string/username"
+                        android:gravity="right"
+                        tools:ignore="RtlHardcoded" />
+
+                    <EditText
+                        android:id="@+id/userNameEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        android:ems="10"
+                        android:inputType="text"/>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="@string/password"
+                        android:gravity="right"
+                        tools:ignore="RtlHardcoded" />
+                    <EditText
+                        android:id="@+id/passwordEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"/>
+
+                </GridLayout>
+            <Button
+                android:id="@+id/login_button"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/colorTitle"
+                android:layout_width="140dp"
+                android:layout_below="@id/login_grid"
+                android:layout_centerHorizontal="true"
+                android:text="@string/loginButtonLabel"
+                android:shadowColor="@color/colorAccent"/>
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/login_button">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_SwitchStatement"/>
+            <TextView
+                android:layout_marginStart="2pt"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:id="@+id/login_SwitchStatement"
+                android:layout_height="wrap_content"
+                android:layout_width="41dp"
+                android:textColor="@color/register_SwitchStatementButtonTitle"
+                android:background="@color/register_SwitchStatementButton"
+                android:text="@string/login_SwitchStatementButton"/>
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>

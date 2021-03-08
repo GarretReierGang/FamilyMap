@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="familymap.branch.Map.FamilyMapFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="10dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  tools:context="familymap.branch.Map.FamilyMapFragment">
+        <ImageView
+            android:id="@+id/map_picture"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"/>
+        <TextView
+            android:id="@+id/map_textButton"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/map_button_default"
+            android:clickable="true"
+            android:layout_weight=".7"/>
+    </LinearLayout>
+</LinearLayout>

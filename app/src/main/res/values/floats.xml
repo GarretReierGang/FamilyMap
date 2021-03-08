@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="default_saturation" format="float" type="dimen">1.0</item>
+    <item name="default_luminance" format="float" type="dimen">0.5</item>
+
+</resources>
